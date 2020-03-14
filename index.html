@@ -1,16 +1,54 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-BR">
+  <head>
+    <title>API SpeechSynthesis - text to speak in pt-BR</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8" />
+    <link
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      rel="stylesheet"
+      integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+      integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="text-center mt-5">
+        Speech synthesiser - Text to speak in pt-BR
+      </h1>
+      <div class="row">
+        <div class="col-12">
+          <div class="d-none alert alert-warning alert-suport" role="alert">
+            Seu navegador não tem suporte ao Speech Synthesiser! :(
+          </div>
+          <form class="mt-5" id="form-text">
+            <div class="form-group">
+              <label for="text">Escreva um texto:</label>
+              <input
+                type="text"
+                class="form-control form-control-lg"
+                id="text"
+                placeholder="Seu texto..."
+              />
+              <small id="text" class="form-text text-muted"
+                >Seu texto será reproduzido em português Brasil.</small
+              >
+            </div>
+            <button type="submit" class="btn btn-primary btn-lg">
+              <i class="fa fa-play" aria-hidden="true"></i>
+              <span class="ml-1 font-weight-bold">Play</span>
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
 
-<head>
-	<title>Parcel Sandbox</title>
-	<meta charset="UTF-8" />
-</head>
-
-<body>
-	<div id="app"></div>
-
-	<script src="src/index.js">
-	</script>
-</body>
-
+    <script src="src/index.js"></script>
+  </body>
 </html>

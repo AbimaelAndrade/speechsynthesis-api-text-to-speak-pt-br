@@ -1,7 +1,7 @@
 {
-  "name": "vanilla",
+  "name": "speechsynthesis-text-to-speak",
   "version": "1.0.0",
-  "description": "JavaScript example starter project",
+  "description": "API SpeechSynthesis - text to speak in pt-BR",
   "main": "index.html",
   "scripts": {
     "start": "parcel index.html --open",
